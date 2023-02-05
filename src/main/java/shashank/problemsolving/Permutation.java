@@ -20,10 +20,6 @@ public class Permutation {
             return;
         }
 
-        if (current.size() > length) {
-            return;
-        }
-
         int count = 0;
         for (int i = start; count < length; i = (i + 1)%length) {
             if(!current.contains(a[i])) {

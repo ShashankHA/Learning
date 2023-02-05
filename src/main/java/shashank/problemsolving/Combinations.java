@@ -6,7 +6,7 @@ import java.util.List;
 public class Combinations {
     // leetcode 77
     public static void main(String[] args) {
-        int a[] = {1, 2, 3, 4};
+        int a[] = {1, 2, 4};
         int n = 4;
         int k = 2;
         // return all 2 letter combinations
@@ -20,10 +20,6 @@ public class Combinations {
 
         if (current.size() == length) {
             answer.add(new ArrayList<>(current));
-            return;
-        }
-
-        if (current.size() > length) {
             return;
         }
 
