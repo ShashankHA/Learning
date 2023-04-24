@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class streams {
+public class Java8Streams {
 
     public static void main(String[] args) {
         Stream.of("d2", "a2", "b1", "b3", "c")

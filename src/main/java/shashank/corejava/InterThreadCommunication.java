@@ -53,14 +53,10 @@ public class InterThreadCommunication {
 
         // Creating a new thread and invoking
         // our fire() method on it
-        new Thread() {
-            @Override public void run() { gf.fire(60); }
-        }.start();
+        new Thread(() -> gf.fire(60)).start();
 
         // Creating a new thread and invoking
         // our reload method on it
-        new Thread() {
-            @Override public void run() { gf.reload(); }
-        }.start();
+        new Thread(() -> gf.reload()).start();
     }
 }
